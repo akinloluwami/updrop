@@ -26,6 +26,5 @@
  * ```
  */
 
-import './index.css';
-
-console.log('👋 This message is being logged by "renderer.ts", included via Vite');
+// Add this to the end of the existing file
+import "./main";
