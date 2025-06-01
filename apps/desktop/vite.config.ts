@@ -31,4 +31,17 @@ export default defineConfig({
           : {},
     }),
   ],
+  resolve: {
+    alias: {
+      "@updrop/local-server": path.resolve(
+        __dirname,
+        "../../packages/local-server/src"
+      ), // or dist if you're building
+    },
+  },
+  build: {
+    rollupOptions: {
+      external: ["@updrop/local-server"],
+    },
+  },
 });

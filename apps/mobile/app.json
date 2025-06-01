@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "mobile",
-    "slug": "mobile",
+    "name": "across",
+    "slug": "across",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "mobile",
+    "scheme": "across",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {

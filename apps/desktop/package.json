@@ -15,7 +15,8 @@
     "@tanstack/router-plugin": "^1.120.13",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "tailwindcss": "^4.1.8"
+    "tailwindcss": "^4.1.8",
+    "@updrop/local-server": "workspace:*"
   },
   "devDependencies": {
     "@types/react": "^18.2.64",
@@ -33,5 +34,11 @@
     "vite-plugin-electron": "^0.28.6",
     "vite-plugin-electron-renderer": "^0.14.5"
   },
-  "main": "dist-electron/main.js"
+  "main": "dist-electron/main.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    }
+  }
 }
