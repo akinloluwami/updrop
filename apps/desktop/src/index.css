@@ -1,0 +1,10 @@
+@import url(https://fonts.googleapis.com/css?family=Geist+Mono:100,200,300,regular,500,600,700,800,900);
+@import "tailwindcss";
+
+body {
+  font-family: "Geist Mono", monospace;
+}
+
+button {
+  cursor: pointer;
+}
