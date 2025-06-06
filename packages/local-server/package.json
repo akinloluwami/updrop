@@ -16,9 +16,11 @@
   },
   "dependencies": {
     "@hono/node-server": "^1.14.3",
+    "bonjour": "^3.5.0",
     "hono": "^4.7.11"
   },
   "devDependencies": {
+    "@types/bonjour": "^3.5.13",
     "@types/node": "^20.11.17",
     "tsx": "^4.7.1",
     "typescript": "^5.8.3"
