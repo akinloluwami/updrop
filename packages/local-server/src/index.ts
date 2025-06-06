@@ -1,9 +1,9 @@
 import { Hono } from "hono";
 import { serve } from "@hono/node-server";
 import { cors } from "hono/cors";
-import { stream } from "hono/streaming";
 import fs from "fs";
 import path from "path";
+import bonjour from "bonjour";
 
 const app = new Hono();
 
@@ -24,8 +24,20 @@ app.post("/upload", async (c) => {
   return c.text("File received!");
 });
 
-export const startLocalServer = (port = 7000) => {
+// create bonjour instance and advertise the service
+const bonjourService = bonjour().publish({
+  name: "updrop-local-server",
+  type: "http",
+  port: 7000,
+  // you can add txt if you want metadata
+  txt: {
+    description: "Updrop file sharing server",
+  },
+});
+
+export const startLocalServer = (port = 7656) => {
   serve({ fetch: app.fetch, port }, () => {
     console.log(`🚀 Hono server running on http://localhost:${port}`);
+    console.log(`📡 Bonjour service announced`);
   });
 };
