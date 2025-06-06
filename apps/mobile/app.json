@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "across",
-    "slug": "across",
+    "name": "updrop-mobile",
+    "slug": "updrop-mobile",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "across",
+    "scheme": "updrop",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {

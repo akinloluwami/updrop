@@ -1,20 +1,8 @@
-import { SolarPlanet3BoldDuotone } from "@/components/SolarPlanet3BoldDuotone";
-import { ThemedText } from "@/components/ThemedText";
-
-import {
-  FlatList,
-  SafeAreaView,
-  StyleSheet,
-  Text,
-  TouchableOpacity,
-  View,
-} from "react-native";
+import { SafeAreaView, StyleSheet } from "react-native";
 
 export default function HomeScreen() {
   return (
-    <SafeAreaView style={styles.container}>
-      <Text>Hello</Text>
-    </SafeAreaView>
+    <SafeAreaView style={styles.container}>{/* <Discovery /> */}</SafeAreaView>
   );
 }
 
